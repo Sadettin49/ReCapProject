@@ -12,17 +12,17 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    public class BrandManager : IBrandService
+    public class UserManager : IUserService
     {
-        IBrandDal _brandDal;
-        public IDataResult<List<Brand>> GetAll()
+        IUserDal _userDal;
+        public IDataResult<List<User>> GetAll()
         {
-            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(), Messages.ProductListed);
+            return new SuccessDataResult<List<User>>(_userDal.GetAll(), Messages.ProductListed);
         }
 
-        public IDataResult<List<Brand>> GetAllById(int id)
+        public IDataResult<List<User>> GetUsersById(int userId)
         {
-            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(p => p.Id==id));
+            return new SuccessDataResult<List<User>>(_userDal.GetAll(p => p.Id == userId));
         }
     }
 }

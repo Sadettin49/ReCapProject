@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    public interface IBrandService
+    public interface IUserService
     {
-        IDataResult<List<Brand>> GetAll();
-        IDataResult<List<Brand>> GetAllById(int id);
+        IDataResult<List<User>> GetAll();
+        IDataResult<List<User>> GetUsersById(int userId);
     }
 }
