@@ -17,6 +17,6 @@ namespace Business.Abstract
         List<Car> GetByDailyPrice(decimal dailyPriceMin,decimal dailyPriceMax);
         List<Car> GetByDailyPrice(decimal dailyPriceMin);
         List<Car> GetCarsByCarNameLenght(int carNameLenght);
-        List<CarDetailDto> GetCarsDetail(int carNameLenght);
+        List<CarDetailDto> GetCarsDetail();
     }
 }

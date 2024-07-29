@@ -54,7 +54,7 @@ namespace Business.Concrete
             return _carDal.GetAll(p=>p.ColorId==colorId);
         }
 
-        public List<CarDetailDto> GetCarsDetail(int carNameLenght)
+        public List<CarDetailDto> GetCarsDetail()
         {
             return _carDal.GetCarDetails();
         }

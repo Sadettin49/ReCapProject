@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Entity.DTOs
 {
-    public class CarDetailDto :IDto
+    public class CarDetailDto : IDto
     {
-       using( Recap)
-	{
-
-	}
-	{
+        public string CarName { get; set; }
+        public string BrandName { get; set; }
+        public string ColorName { get; set; }
+        public int DailyPrice { get; set; }
+    }
+}
+	
 
 	
-}
