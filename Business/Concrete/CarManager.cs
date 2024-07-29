@@ -19,7 +19,8 @@ namespace Business.Concrete
 
         public IResult Add(Car car)
         {
-            throw new NotImplementedException();
+            _carDal.Add(car);
+            return new SuccessResult(Messages.ProductAdded);
         }
 
         public IDataResult<List<Car>> GetAll()

@@ -15,6 +15,13 @@ namespace Business.Concrete
     public class RentalManager : IRentalService
     {
         IRentalDal _rentalDal;
+
+        public IResult Add(Rental rental)
+        {
+            _rentalDal.Add(rental);
+            return new SuccessResult(Messages.ProductAdded);
+        }
+
         public IDataResult<List<Rental>> GetAll()
         {
             return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll(), Messages.ProductListed);
