@@ -15,6 +15,7 @@ namespace ConsoleUI
             //    //Console.WriteLine(car.  /*car.ModelYear+" "+car.Description*/);
             //    Console.WriteLine(car.BrandName + " " + car.CarName + " " + car.ColorName + " " + car.DailyPrice);
             //}
+            //------------------------------------------------------------------------------------------
             RentalManager rentalManager = new RentalManager(new EfRentalDal());
 
             Rental rental = new Rental { CardId=1, ReturnDate = DateTime.Now , RentDate= DateTime.Now};    
@@ -25,6 +26,7 @@ namespace ConsoleUI
             {
                 Console.WriteLine(rentals.CardId+" "+ rentals.ReturnDate+" "+rentals.RentDate);
             }
+            //-------------------------------------------------------------------------------------------------
         }
     }
 }
